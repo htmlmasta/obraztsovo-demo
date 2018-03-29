@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="273" height="377" viewBox="0 0 273 377" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      .lot {
+      stroke: none;
+      fill: none;
+      }
+      .th-on-sale {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2.5;
+      fill-opacity: .5;
+      }
+      .th-on-sale {
+      fill: #4892b3;
+      stroke: #03fff4;
+      cursor: pointer;
+      }
+      .th-on-sale:hover {
+      stroke: #ef0000;
+      }
+      .th-on-sale.selected {
+      stroke: #ef0000;
+      fill: #b8973b;
+      }
+    </style>
+  </defs>
+
+  <path class="lot" id="th4_01" d="m 170,315 0,30 -24,23 -36,-35 10,-11.52623 0,-6.47381 z" />
+  <path class="lot" id="th4_02" d="m 120,283 50,0 0,32 -50,0 z" />
+  <path class="lot" id="th4_03" d="m 120,283 0,-7 38,-34 12,12 0,29 z" />
+  <path class="lot" id="th4_04" d="m 120,276 38,-34 -16,-17 -38,34 z" />
+  <path class="lot" id="th4_05" d="m 142,225 -3,-3 0,-5 -51,0 0,24.77052 15.97936,17.17349 z" />
+  <path class="lot" id="th4_06" d="m 152,153 0,64 -67,0 0,-64 z" />
+  <path class="lot" id="th4_07" d="m 88,153 0,-24 14,-15 37,33 0,6 z" />
+  <path class="lot" id="th4_08" d="m 139,147 -37,-33 18,-19 37,33 z" />
+  <path class="lot" id="th4_09" d="m 120,95 0,-10 50,0 0,30 -13,13 z" />
+  <path class="lot" id="th4_10" d="m 120,53 50,0 0,32 -50,0 z" />
+</svg>

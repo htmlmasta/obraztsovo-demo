@@ -1,0 +1,553 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/avenir_next.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/avenir_next_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/avenir_next_demy.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("../fonts/avenir_next_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Achille II';
+  src: url("../fonts/achille.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-project:before {
+  content: ""; }
+
+.icon-building:before {
+  content: ""; }
+
+.icon-decoration:before {
+  content: ""; }
+
+.icon-key:before {
+  content: ""; }
+
+.icon-service:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-instagram:before {
+  content: ""; }
+
+.icon-application:before {
+  content: ""; }
+
+.icon-news:before {
+  content: ""; }
+
+.icon-user:before {
+  content: ""; }
+
+.icon-plus:before {
+  content: ""; }
+
+.icon-minus:before {
+  content: ""; }
+
+.icon-left:before {
+  content: ""; }
+
+.icon-right:before {
+  content: ""; }
+
+.icon-zoom-in:before {
+  content: ""; }
+
+.icon-zoom-out:before {
+  content: ""; }
+
+.icon-run:before {
+  content: ""; }
+
+.icon-cycling:before {
+  content: ""; }
+
+.icon-slide:before {
+  content: ""; }
+
+.icon-swim:before {
+  content: ""; }
+
+.icon-skates:before {
+  content: ""; }
+
+.icon-phone:before {
+  content: ""; }
+
+/* Peppermint minimal required styles */
+.peppermint.peppermint-active {
+  position: relative;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0; }
+
+.peppermint.peppermint-active .peppermint-slides {
+  position: relative;
+  overflow: hidden;
+  /* clearfix */
+  touch-action: pan-y; }
+
+.peppermint.peppermint-active .peppermint-slides > * {
+  float: left;
+  margin: 0;
+  box-sizing: border-box;
+  tap-highlight-color: transparent; }
+
+.peppermint.peppermint-active .peppermint-slides a:active,
+.peppermint.peppermint-active .peppermint-slides a:active img {
+  outline: none; }
+
+.peppermint.peppermint-active,
+.peppermint.peppermint-active .peppermint-dots,
+.peppermint.peppermint-active .peppermint-slides,
+.peppermint.peppermint-active .peppermint-slides > * {
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.peppermint.peppermint-mouse .peppermint-slides {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.peppermint.peppermint-mouse.peppermint-drag .peppermint-slides * {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+.steps {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/list_bg_1.jpg);
+  background-size: cover;
+  padding: 80px 10px 60px;
+  margin: 0;
+  list-style: none;
+  counter-reset: item; }
+  body.phone .steps {
+    font: normal 8px "Achille II", Courier; }
+  .steps.blue {
+    background-image: url(../img/list_bg_2.jpg); }
+  .steps-item {
+    margin: 0 0 2.14em; }
+  .steps-link {
+    display: block;
+    height: 7.5em;
+    width: 100%;
+    border-radius: 3.75em;
+    border: 2px solid #fff;
+    box-shadow: 0.71em 1.14em 1.86em rgba(0, 0, 0, 0.26), inset 2.71em 1.14em 3.86em rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Achille II", Courier;
+    line-height: 1.2;
+    padding: .8em 1em 0 8em;
+    position: relative; }
+    .steps-link::before {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: .07em;
+      font-family: 'icons';
+      font-size: 3.96em;
+      width: 1.64em;
+      height: 1.64em;
+      line-height: 1.64em;
+      text-align: center;
+      border-radius: 50%;
+      background: #fff;
+      color: #3b540f; }
+    .steps-link.step1::before {
+      content: ""; }
+    .steps-link.step2::before {
+      content: ""; }
+    .steps-link.step3::before {
+      content: ""; }
+    .steps-link.step4::before {
+      content: ""; }
+    .steps-link.step5::before {
+      content: ""; }
+    .steps-link b {
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0 0 .4em; }
+  .steps.blue .steps-link::before {
+    color: #0d3e58; }
+  .steps.blue .steps-link.step1::before {
+    content: ""; }
+  .steps.blue .steps-link.step2::before {
+    content: ""; }
+  .steps.blue .steps-link.step3::before {
+    content: ""; }
+  .steps.blue .steps-link.step4::before {
+    content: ""; }
+  .steps.blue .steps-link.step5::before {
+    content: ""; }
+
+@media screen and (min-width: 414px) {
+  .steps {
+    top: 8.64em;
+    right: 51%;
+    left: auto;
+    bottom: auto;
+    padding: 0;
+    background: none; }
+    .steps.blue {
+      background: none; }
+    .steps-item {
+      margin: 0 0 2.14em; }
+    .steps-link {
+      height: 7.14em;
+      width: 39em;
+      border-radius: 3.57em;
+      padding: 1em 1em 0 7em;
+      transition: opacity ease .5s, transform ease .5s; }
+      .steps-link::before {
+        left: .18em;
+        font-size: 3.4em; }
+      .steps-link.step2 {
+        transition-delay: .2s; }
+      .steps-link.step3 {
+        transition-delay: .4s; }
+      .steps-link.step4 {
+        transition-delay: .6s; }
+      .steps-link.step5 {
+        transition-delay: .8s; }
+      .steps-link::after {
+        content: counter(item);
+        counter-increment: item;
+        position: absolute;
+        top: -.4em;
+        left: -.35em;
+        font-family: "Avenir Next", Arial;
+        font-size: 10em;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.09);
+        z-index: -1; }
+      .steps-link b {
+        margin: 0 0 .5em; }
+      .steps-link:hover {
+        background: rgba(255, 255, 255, 0.24);
+        color: #fff;
+        text-decoration: none;
+        cursor: default; }
+        .steps-link:hover::before {
+          color: #5ab348; }
+        .steps-link:hover::after {
+          color: rgba(255, 255, 255, 0.09); }
+  .active + .section .steps-link {
+    opacity: 0;
+    transform: translate(-50%, 0); } }
+
+html {
+  height: 100%; }
+
+body.phone {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #391f0a; }
+  body.phone .header .toolbar {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1; }
+    body.phone .header .toolbar .menu-button {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 18px;
+      top: 18px; }
+      body.phone .header .toolbar .menu-button::before {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 3px;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        box-shadow: 0 7px 0 #000, 0 14px 0 #000; }
+    body.phone .header .toolbar .logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    body.phone .header .toolbar .phone-link {
+      position: absolute;
+      color: #fff;
+      right: 14px;
+      top: 14px;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-decoration: none;
+      overflow: hidden;
+      text-align: center; }
+      body.phone .header .toolbar .phone-link::before {
+        content: "";
+        font-family: "icons";
+        background: #5ab348;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0; }
+  body.phone .header .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/bg_menu.jpg);
+    background-size: cover;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; }
+    body.phone .header .menu::before, body.phone .header .menu::after {
+      content: url(../img/branch.png);
+      position: absolute; }
+    body.phone .header .menu::before {
+      left: -90px;
+      top: -105px;
+      transform: scale(0.5) rotate(30deg); }
+    body.phone .header .menu::after {
+      right: -90px;
+      bottom: -105px;
+      transform: scale(0.5) rotate(-150deg); }
+    body.phone .header .menu .logo {
+      margin-top: 50px; }
+    body.phone .header .menu .nav {
+      flex-grow: 1;
+      flex-basis: 100%;
+      font: 500 14px "Avenir Next", Arial;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body.phone .header .menu .nav-list {
+        list-style: none;
+        padding: 0; }
+      body.phone .header .menu .nav-item {
+        margin: 28px 0; }
+      body.phone .header .menu .nav-link {
+        color: #656d78;
+        text-decoration: none;
+        text-shadow: 0 0 0 #656d78;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+    body.phone .header .menu .phone-link {
+      background: #5ab348;
+      color: #fff;
+      display: inline-block;
+      height: 32px;
+      font: 600 14px/32px "Avenir Next", Arial;
+      padding: 0 20px;
+      border-radius: 16px;
+      text-decoration: none; }
+    body.phone .header .menu .address {
+      margin: 10px 0 20px;
+      color: #5ab348;
+      font: 600 14px/1.3 "Avenir Next", Arial; }
+      body.phone .header .menu .address b {
+        font-weight: 600;
+        display: block; }
+    body.phone .header .menu.hidden {
+      transform: translateX(-100%); }
+    body.phone .header .menu.animated {
+      transition: transform .5s; }
+  body.phone .peppermint {
+    height: 100%; }
+    body.phone .peppermint-slides {
+      height: 100%; }
+    body.phone .peppermint-dots {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font: normal 10px "Avenir Next", Arial;
+      list-style: none;
+      margin: 14px 0;
+      padding: 0;
+      text-align: center;
+      counter-reset: dots 0; }
+      body.phone .peppermint-dots li {
+        display: inline-block;
+        margin: 0 2px;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+        -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+        outline: none !important; }
+        body.phone .peppermint-dots li::before {
+          counter-increment: dots 1;
+          content: counter(dots);
+          display: block;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          color: #fff; }
+      body.phone .peppermint-dots .peppermint-active-dot::before {
+        background: #fff;
+        color: #5ab348;
+        font-weight: bold;
+        border-radius: 50%;
+        outline: none; }
+  body.phone .section {
+    height: 100%;
+    color: #fff;
+    padding: 80px 10px 60px;
+    box-sizing: border-box;
+    font-family: "Achille II", Courier;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    body.phone .section.wood {
+      background: url(../img/wood.jpg);
+      background-size: cover;
+      font-size: 12px;
+      line-height: 1.6; }
+      body.phone .section.wood::before {
+        content: 'Жителям коттеджного поселка “Образцово” доступно:';
+        font-size: 18px;
+        line-height: 1.4; }
+      body.phone .section.wood .section-title {
+        font-size: 26px;
+        line-height: 1.2;
+        margin: 30px 0 15px;
+        position: relative;
+        font-weight: normal; }
+        body.phone .section.wood .section-title::before {
+          content: '';
+          height: 1px;
+          width: 60%;
+          background: #fff;
+          left: 0;
+          top: -15px;
+          position: absolute; }
+        body.phone .section.wood .section-title b {
+          font-weight: normal;
+          color: #5ab348;
+          display: block; }
+      body.phone .section.wood .section-content {
+        flex-shrink: 1;
+        flex-grow: 0;
+        overflow: scroll; }
+        body.phone .section.wood .section-content p {
+          margin: 15px 0 0; }
+          body.phone .section.wood .section-content p:first-child {
+            margin: 0; }
+      body.phone .section.wood a {
+        color: #5ab348;
+        text-decoration: none; }
+    body.phone .section:last-child p:last-child {
+      display: none; }
+  body.phone .landscape-blocker {
+    display: none; }
+
+.loader-blocker {
+  position: fixed;
+  left: -200px;
+  top: -200px;
+  right: -200px;
+  bottom: -200px;
+  padding: 240px;
+  z-index: 1100;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font: normal 24px "Achille II", Courier;
+  text-align: center;
+  transition: opacity .5s;
+  transition-delay: .5s; }
+  .loader-blocker::before {
+    content: url(../img/logo_full.svg);
+    margin: 0 0 30px;
+    transform: scale(1.5); }
+  body.phone .loader-blocker {
+    display: none; }
+
+@media screen and (orientation: landscape) {
+  .phone .landscape-blocker {
+    position: fixed;
+    left: -200px;
+    top: -200px;
+    right: -200px;
+    bottom: -200px;
+    padding: 240px;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font: normal 24px "Achille II", Courier;
+    text-align: center; }
+    .phone .landscape-blocker::before {
+      content: url(../img/logo_full.svg);
+      margin: 0 0 30px;
+      transform: scale(1.5); }
+    .phone .landscape-blocker b {
+      display: block;
+      text-align: center;
+      color: #5ab348; } }

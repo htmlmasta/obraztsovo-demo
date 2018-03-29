@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="381" height="200" viewBox="0 0 381 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      .lot {
+        stroke: none;
+        fill: none;
+      }
+      .th-on-sale {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.5;
+        fill-opacity: .5;
+      }
+      .th-on-sale {
+        fill: #4892b3;
+        stroke: #03fff4;
+        cursor: pointer;
+      }
+      .th-on-sale:hover {
+        stroke: #ef0000;
+      }
+      .th-on-sale.selected {
+        stroke: #ef0000;
+        fill: #b8973b;
+      }
+    </style>
+  </defs>
+  <rect class="lot" id="th1_01" width="48" height="148" x="12" y="42"/>
+  <rect class="lot" id="th1_02" width="48" height="148" x="63.333332" y="42"/>
+  <rect class="lot" id="th1_03" width="48" height="148" x="114.66666" y="42"/>
+  <rect class="lot" id="th1_04" width="48" height="148" x="165.99998" y="42"/>
+  <rect class="lot" id="th1_05" width="48" height="148" x="217.33331" y="42"/>
+  <rect class="lot" id="th1_06" width="48" height="148" x="268.66666" y="42"/>
+  <rect class="lot" id="th1_07" width="48" height="148" x="320" y="42"/>
+</svg>
