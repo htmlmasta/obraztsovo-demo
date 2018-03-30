@@ -75,9 +75,7 @@ $(document).ready(function() {
 });
 
 document.getElementById('details').onload = function() {
-	var
-		$details = $('#details'),
-		$svg = $details.contents().find('svg');
+	var $svg = $(document.getElementById('details').contentDocument).find('svg');
 
 	$(document).on('click', '.master-plan-aside-info-content-button', function() {
 		$('#popup-form').show().siblings().hide().parent().show();
@@ -88,7 +86,7 @@ document.getElementById('details').onload = function() {
 		$lot.attr('class', 'lot-on-sale');
 		$lot.mouseover(function() {
 			var
-				$this = $(this)
+				$this = $(this);
 				$selected = $this.siblings('.lot-on-sale.selected');
 			$this.appendTo($svg);
 			if ($selected.length) {
@@ -163,8 +161,7 @@ document.getElementById('details').onload = function() {
 ths.forEach(function(th) {
 	document.getElementById(th.svg).onload = function() {
 		var
-			$details = $('#' + th.svg),
-			$svg = $details.contents().find('svg'),
+			$svg = $(document.getElementById('details').contentDocument).find('svg'),
 			thId, thLotId;
 
 		$(document).on('click', '#' + th.popup + ' .th-button', function() {
