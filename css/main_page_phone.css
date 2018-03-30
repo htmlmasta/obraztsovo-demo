@@ -500,8 +500,9 @@ body.phone {
         text-decoration: none; }
     body.phone .section:last-child p:last-child {
       display: none; }
-  body.phone .landscape-blocker {
-    display: none; }
+
+.landscape-blocker {
+  display: none; }
 
 .loader-blocker {
   position: fixed;

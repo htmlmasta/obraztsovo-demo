@@ -2513,7 +2513,7 @@ a.fn.owlCarousel.Constructor.Plugins.Animate=e}(window.Zepto||window.jQuery,wind
 var
 	minRatio = 800 / 1440,
 	maxRatio = 800 / 1440,
-	startScriptsCounter = 4;
+	startScriptsCounter = 13;
 
 function setSizes () {
 	var
@@ -2569,14 +2569,22 @@ function loadDesktopStyles() {
 		rel: 'stylesheet',
 		type: 'text/css',
 		href: 'css/main_page_desktop.css'
-	}).on('load', function () {
-		tryToStartScripts();
-	}).appendTo('head');
-
+	}).on('load', tryToStartScripts).appendTo('head');
 }
 
 function createDecorations () {
 	var $decorations = $('<div class="decorations">');
+	var bgs = [
+		'img/wood_desktop.jpg',
+		'img/bg_section1.jpg',
+		'img/bg_section2.jpg',
+		'img/bg_section3.jpg',
+		'img/bg_section4.jpg',
+		'img/bg_section5.jpg',
+		'img/bg_section6.jpg',
+		'img/bg_section7.jpg',
+		'img/bg_section8.jpg'
+	];
 
 	$decorations
 		.append('<div class="frame frame1">')
@@ -2591,6 +2599,10 @@ function createDecorations () {
 
 	$('body').prepend($decorations);
 	$decorations.after($('<div class="branch">'));
+
+	for (var i = 0; i < bgs.length; i++) {
+		$('<img>', {src: bgs[i]}).on('load', tryToStartScripts);
+	}
 }
 
 function startScripts () {
